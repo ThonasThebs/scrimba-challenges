@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1B244A;
+    color: #F3F4F6;
+}
+
+@font-face {
+    font-family: 'Cursed Timer';
+    src: url('fonts/CursedTimerUlil-Aznm.ttf');
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+#scoreboard-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+.title {
+    font-size: 64px;
+    margin-bottom: 0px;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    padding: 10px;
+    border: 2px solid #080001;
+    border-radius: 10px;
+    width: 210px;
+    height: 210px;
+    background-color: #080001;
+    font-family: 'Cursed Timer';
+    margin-bottom: 20px;
+    margin-top: 48px;
+    color: #E11D48;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Cursed Timer';
+    font-size: 24px;
+}
+
+.button {
+    background-color: transparent;
+    color: #F3F4F6;
+    border: 2px solid #F3F4F6;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Cursed Timer';
+    font-size: 24px;
+    width: 60px;
+    height: auto;
+}
+
+#reset-button {
+    display: flex;
+    background-color: #E11D48;
+    color: #F3F4F6;
+    border: 2px solid #F3F4F6;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Cursed Timer';
+    font-size: 24px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+}
+
+.winner {
+    border: 2px solid #F3F4F6 !important;
+    /* Highlights the winner with a light border */
+}
