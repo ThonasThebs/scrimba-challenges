@@ -1,0 +1,74 @@
+body {
+    background-color: #1F2937;
+    font-family: "inter";
+    text-align: center;
+    margin: 0;
+}
+
+#hero {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    background-color: #6943FF;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-title {
+    font-size: 64px;
+    color: white;
+}
+
+#input-nmb {
+    margin: 0;
+    background-color: #6943FF;
+    width: auto;
+    font-size: 64px;
+    font-weight: bold;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    border: 2px solid #B295FF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    width: 120px;
+    box-sizing: content-box;
+    min-width: 50px;
+}
+
+#results-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.result-card {
+    margin-top: 20px;
+    width: 80%;
+    background-color: #273549;
+    border-radius: 8px;
+    margin-bottom: 20px
+}
+
+.result-title {
+    font-family: "inter";
+    font-size: 32px;
+    color: #CCC1FF;
+}
+
+.results-text {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: "inter";
+    font-size: 24px;
+}
