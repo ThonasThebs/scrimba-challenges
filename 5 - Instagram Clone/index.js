@@ -28,3 +28,40 @@ const posts = [
     }
 ]
 
+const postElement = document.getElementById("post")
+let listItems = ""
+
+function renderPost() {
+    for (let i=0; i < posts.length; i++) {
+        listItems += `
+        <div class="post-el">
+            <div class="poster">
+                <div>
+                    <img class="poster-avatar" src="${posts[i].avatar}">
+                </div>
+                <div class="poster-metadata">
+                    <h5 class="poster-name">${posts[i].name}</h5>
+                    <p class="poster-location">${posts[i].location}</p>
+                </div>
+            </div>
+            <img class="image-posted" src="${posts[i].post}">
+            <div class="bottom-content">
+                <div class="icons">
+                    <img id="likes-btn-${[i]}" class="ico" src="images/icon-heart.png">
+                    <img class="ico" src="images/icon-comment.png">
+                    <img class="ico" src="images/icon-dm.png">
+                </div>
+                <div>
+                    <p class="likes-el">${posts[i].likes} likes</p>
+                </div>
+                <div class="comment-section">
+                    <p class="username">${posts[i].username}</p>
+                    <p class="comment">${posts[i].comment}</p>
+                </div>
+            </div>
+        </div>`
+    }
+    postElement.innerHTML = listItems
+}
+
+renderPost ()

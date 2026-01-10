@@ -1,5 +1,105 @@
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    width: 390px;
+    background-color: #EDEDED;
 }
 
+
+/* Uniform margim */
+
+.post-el {
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+nav,
+.user-avatar,
+.poster,
+.image-posted,
+.ico,
+p,
+h5 {
+    background-color: white;
+    margin: 4px 0 4px 0;
+}
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 16px;
+}
+
+.logo {
+    width: 127px;
+    height: fit-content;
+}
+
+.user-avatar,
+.poster-avatar {
+    width: 34px;
+    height: fit-content;
+    border-radius: 17px;
+    margin: 8px;
+}
+
+/* Post */
+/* Poster */
+.poster {
+    display: flex;
+}
+
+.poster-metadata {
+    display: block;
+    
+}
+
+h5 {
+    font-size: 13px;
+    margin: 2px 0;
+    font-weight: 900;
+}
+
+p {
+    font-size: 12px;
+}
+.poster-metadata p {
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+/* Post image */
+
+.image-posted {
+    width: 100%;
+    height: fit-content;
+}
+
+/* Icons */
+
+.ico {
+    width: 30px;
+    height: fit-content;
+}
+
+/* Comment section */
+.likes-el {
+    font-weight: bold;
+}
+
+.comment-section {
+    display: flex;
+}
+
+.username {
+    font-weight: bold;
+    padding: 0 4px 0 0;
+}
+
+.bottom-content {
+    padding: 8px;
+}
